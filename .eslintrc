@@ -1,7 +1,5 @@
 {
-  "parser": "@typescript-eslint/parser",
   "plugins": [
-    "@typescript-eslint/eslint-plugin",
     "unicorn",
     "array-plural"
   ],
@@ -9,7 +7,6 @@
     "eslint:recommended"
   ],
   "parserOptions": {
-    "project": "./tsconfig.json",
     "sourceType": "module"
   },
   "env": {
@@ -32,7 +29,6 @@
     "unicorn/error-message": "warn",
     "unicorn/prefer-includes": "warn",
     "unicorn/no-unsafe-regex": "warn",
-    "unicorn/new-for-builtins": "warn",
     "unicorn/prefer-string-slice": "warn",
     "unicorn/prefer-trim-start-end": "warn",
     "unicorn/custom-error-definition": "warn",
@@ -65,38 +61,5 @@
     "max-nested-callbacks": ["error", 4],
     "wrap-iife": ["error", "inside"],
     "unicorn/filename-case": ["error", {"case": "kebabCase"}],
-
-    "@typescript-eslint/unbound-method": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/member-delimiter-style": ["warn", {
-      "multiline": {
-        "delimiter": "comma",
-        "requireLast": false
-      },
-      "singleline": {
-        "delimiter": "comma",
-        "requireLast": false
-      }
-    }],
-
-    "@typescript-eslint/semi": "warn",
-    "@typescript-eslint/camelcase": "warn",
-    "@typescript-eslint/brace-style": "warn",
-    "@typescript-eslint/no-unused-vars": "warn",
-    "@typescript-eslint/await-thenable": "warn",
-    "@typescript-eslint/func-call-spacing": "warn",
-    "@typescript-eslint/no-require-imports": "warn",
-    "@typescript-eslint/no-misused-promises": "warn",
-    "@typescript-eslint/explicit-function-return-type": "warn",
-    "@typescript-eslint/type-annotation-spacing": ["warn", { "after":  true, "before":  false }],
-    "@typescript-eslint/space-before-function-paren": ["warn", "always"],
-    "@typescript-eslint/quotes": ["warn", "single"],
-
-    "@typescript-eslint/no-misused-new": "error",
-    "@typescript-eslint/no-extraneous-class": "error",
-    "@typescript-eslint/no-useless-constructor": "error",
-    "@typescript-eslint/restrict-plus-operands": "error",
-    "@typescript-eslint/no-untyped-public-signature": "error",
-    "@typescript-eslint/class-name-casing": ["error", { "allowUnderscorePrefix": true }]
   }
 }
